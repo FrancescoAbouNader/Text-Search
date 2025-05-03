@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+React Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React-based app that lets users search through a dataset and automatically highlights matching text. An ad image appears beside the search bar for promotional use.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+	•	Live Search: Instantly filters content as you type.
+	•	Text Highlighting: Matches are highlighted in yellow.
+	•	Ad Integration: Linked ad image placed beside the search bar.
 
-### `npm start`
+Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+	•	React
+	•	JavaScript
+	•	CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Getting Started
 
-### `npm test`
+1. Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/FrancescoAbouNader/Text-Search.git
+cd Text-Search
 
-### `npm run build`
+2. Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
+Your app will be running at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+/src
+├── App.js        # Main React component
+├── App.css       # Stylesheet
+├── data.js       # Sample data for search
+├── logot.jpg     # Ad image
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sample data.js Format
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+export const Data = [
+  {
+    title: "Duis consequat dui nec nisi volutpat eleifend.",
+    date: "07/14/1996",
+    script: "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus."
+  
+  },
+  {
+    title: "Morbi non lectus.",
+    date: "01/31/2017",
+    script: "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."
+  }
+];
 
-## Learn More
+	You can add as many entries as you like with title, date, and script.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Customization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	•	Ad image: Replace logot.jpg with any image in the public/ or src/ folder.
+	•	Ad link: Update the URL in App.js inside the <a href="..."> tag.
