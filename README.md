@@ -34,9 +34,13 @@ Your app will be running at http://localhost:3000.
 Project Structure
 
 /src
+
 ├── App.js        # Main React component
+
 ├── App.css       # Stylesheet
+
 ├── data.js       # Sample data for search
+
 ├── logot.jpg     # Ad image
 
 Sample data.js Format
